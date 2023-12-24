@@ -16,4 +16,14 @@ div{
     padding: 30px;
     font-size: 40px;
     font-weight: 900;
+
+    background:
+        url('../images/back-04.jpg') /* image */
+        top center / 500px 500px /* position / size */
+        no-repeat /* repeat */
+        fixed /* attachment */
+        padding-box /* origin */
+        content-box /* clip */
+        red
+    ;
 }
