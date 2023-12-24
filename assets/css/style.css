@@ -1,7 +1,7 @@
 @import url();
 
-body{
-
+*{
+    font-family: Roboto, 'Arial Black';
 }
 
 div{
@@ -11,6 +11,37 @@ div{
 .exemplo {
     width: 300px;
     height: 300px;
-    background-image: url('../images/back-02.jpg');
-    background-repeat: no-repeat;
+    border: 15px dashed palegreen;
+    color: white;
+    padding: 30px;
+    font-size: 40px;
+    font-weight: 900;
+    background-color: palevioletred;
+    background:
+        radial-gradient(black 15%, transparent 16%) 0 0,
+        radial-gradient(black 15%, transparent 16%) 8px 8px,
+        radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
+        radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
+        background-color:#282828;
+        background-size:16px 16px;
+    background-image: url('https://mir-s3-cdn-cf.behance.net/project_modules/max_632/c122027370301.57866ae387674.jpg');
+    background-size: 100% 100%;
+}
+
+#padding-box{
+    background-clip: padding-box;
+}
+
+#border-box{
+    background-clip: border-box;
+}
+
+#content-box{
+    background-clip: content-box;
+}
+
+#text{
+    -webkit-background-clip: text;
+    color: transparent;
+    background-clip: text;
 }
