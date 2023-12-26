@@ -1,7 +1,42 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik+Doodle+Shadow&display=swap');
 
-*{
-    font-family: monospace, "Courier New", "Rubik Doodle Shadow";
+@font-face {
+    font-family: Roboto;
+    src: local(), url("../fonts/Roboto/Roboto-Black.ttf");
+    font-weight: bold;
+    font-stretch: condensed;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url("../fonts/Roboto/Roboto-Regular.ttf");
+    font-weight: normal;
+    font-stretch: expanded;
+    font-style: oblique;
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url("../fonts/Roboto/Roboto-Thin.ttf");
+    font-weight: thin;
+    font-stretch: narrower;
+    font-style: normal;
+}
+
+p{
+    font-family: Roboto, monospace, "Courier New", "Rubik Doodle Shadow";
     font-size: 20px;
-    background: pink;
+    font-weight: normal;
+}
+
+h1{
+    font-family: Roboto;
+    font-weight: bold;
+}
+
+li{
+    font-family: Roboto;
+    font-size: 30px;
+    font-weight: thin;
 }
