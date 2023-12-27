@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik+Doodle+Shadow&display=swap');
+@import url("./global.css");
 
 @font-face {
     font-family: Roboto;
@@ -25,9 +25,10 @@
 }
 
 p{
-    font-family: Roboto, monospace, "Courier New", "Rubik Doodle Shadow";
+    font-family: "Rubik Broken Fax", Roboto, monospace, "Courier New", "Rubik Doodle Shadow";
     font-size: 20px;
-    font-weight: normal;
+    font-weight: bold;
+    font-style: italic;
 }
 
 h1{
