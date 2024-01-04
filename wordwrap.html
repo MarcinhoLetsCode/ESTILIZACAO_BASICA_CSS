@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Propriedade word-wrap</title>
+    <style>
+        body {
+            border: 1px solid black;
+            width: 650px;
+            height: 600px;
+        }
+
+        .exemplo {
+            width: 100px;
+            color: black;
+            background-color: blueviolet;
+        }
+
+        #normal {
+            word-wrap: normal;
+        }
+
+        #break-word {
+            word-wrap: break-word;
+        }
+    </style>
+</head>
+<body>
+    <h2>Propriedade <code>word-wrap</code></h2>
+    <p id="letter-spacing">
+        Define, Caso Uma Palavra Seja Muito Grande Para Caber Em Uma Linha, Se Ela Será Quebrada Para a Próxima Linha, Ou Se Não, Ficar Na Mesma Linha e Ultrapassar Os Limites.
+    </p>
+
+    <code>word-wrap: normal;</code>
+    <p id="normal" class="exemplo">
+        TESTANDO A PALAVRA TESTANDOAPALAVRATUDOJUNTO TESTANDO A PALAVRA
+    </p>
+
+    <code>word-wrap: break-word;</code>
+    <p id="break-word" class="exemplo">
+        TESTANDO A PALAVRA TESTANDOAPALAVRATUDOJUNTO TESTANDO A PALAVRA
+    </p>
+</body>
+</html>
