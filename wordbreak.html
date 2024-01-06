@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Propriedade word-break</title>
+    <style>
+        body {
+            border: 1px solid black;
+            width: 650px;
+            height: 600px;
+        }
+
+        .exemplo {
+            width: 100px;
+            color: black;
+            background-color: blueviolet;
+        }
+
+        #normal {
+            word-wrap: normal;
+        }
+
+        #break-all {
+            word-break: break-all;
+        }
+
+        #keep-all {
+            word-break: keep-all;
+        }
+    </style>
+</head>
+<body>
+    <h2>Propriedade <code>word-break</code></h2>
+    <p id="letter-spacing">
+        Define Quando o Nosso Texto Deve Ter Uma Quebra De Linha.
+    </p>
+
+    <code>word-break: normal;</code>
+    <p id="normal" class="exemplo">
+        TESTANDO A PALAVRA TESTANDOAPALAVRATUDOJUNTO TESTANDO A PALAVRA
+    </p>
+
+    <code>word-break: break-all;</code>
+    <p id="break-all" class="exemplo">
+        TESTANDO A PALAVRA TESTANDOAPALAVRATUDOJUNTO TESTANDO A PALAVRA
+    </p>
+
+    <code>word-break: keep-all;</code>
+    <p id="keep-all" class="exemplo">
+        TESTANDO A PALAVRA TESTANDOAPALAVRATUDOJUNTO TESTANDO A PALAVRA
+    </p>
+</body>
+</html>
