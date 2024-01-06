@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Propriedade writing-mode</title>
+    <style>
+        body {
+            border: 1px solid black;
+            width: 650px;
+            height: 600px;
+        }
+
+        .exemplo {
+            width: 120px;
+            height: 120px;
+            color: black;
+            background-color: blueviolet;
+        }
+
+        #normal {
+            writing-mode: horizontal-tb;
+        }
+
+        #vertical-rl {
+            writing-mode: vertical-rl;
+        }
+
+        #vertical-lr {
+            writing-mode: vertical-lr;
+        }
+
+    </style>
+</head>
+<body>
+    <h2>Propriedade <code>writing-mode</code></h2>
+    <p id="letter-spacing">
+        Define a Orientação Do Texto (Vertical Ou Horizontal).
+    </p>
+
+    <code>writing-mode: horizontal-tb;</code>
+    <p id="normal" class="exemplo">
+        “a”, “e”, “i”, “o” e “u”.
+    </p>
+
+    <code>writing-mode: vertical-rl;</code>
+    <p id="vertical-rl" class="exemplo">
+        “a”, “e”, “i”, “o” e “u”.
+    </p>
+
+    <code>writing-mode: vertical-lr;</code>
+    <p id="vertical-lr" class="exemplo">
+        “a”, “e”, “i”, “o” e “u”.
+    </p>
+</body>
+</html>
