@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Propriedade text-overflow</title>
+    <style>
+        body {
+            border: 1px solid black;
+            width: 650px;
+            height: 600px;
+            margin: 10px;
+            padding: 10px;
+        }
+
+        .exemplo {
+            width: 120px;
+            height: 120px;
+            color: black;
+            background-color: rgb(229, 123, 141);
+        }
+
+        p {
+            white-space: nowrap;
+            overflow: hidden;
+        }
+
+        #normal {
+            text-overflow: clip;
+        }
+
+        #ellipsis {
+            text-overflow: ellipsis;
+        }
+
+        #string {
+            text-overflow: 'Ver Mais >'; /* FIREFOX */
+        }
+
+    </style>
+</head>
+<body>
+    <h2>Propriedade <code>text-overflow</code></h2>
+    <p id="letter-spacing">
+        Define a Orientação Do Texto (Vertical Ou Horizontal).
+    </p>
+
+    <code>text-overflow: clip;</code>
+    <p id="normal" class="exemplo">
+        Vogais: “a”, “e”, “i”, “o” e “u”.
+    </p>
+
+    <code>text-overflow: ellipsis;</code>
+    <p id="ellipsis" class="exemplo">
+        Vogais: “a”, “e”, “i”, “o” e “u”.
+    </p>
+
+    <code>text-overflow: string;</code>
+    <p id="string" class="exemplo">
+        Vogais: “a”, “e”, “i”, “o” e “u”.
+    </p>
+</body>
+</html>
