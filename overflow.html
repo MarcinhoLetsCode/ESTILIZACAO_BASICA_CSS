@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>overflow</title>
+    <style>
+        body {
+            width: 650px;
+            height: 630px;
+            padding: 10px;
+            border: 1px solid black;
+        }
+
+        .exemplo{
+            background-color: orange;
+            width: 200px;
+            height: 200px;
+            border: 5px solid purple;
+            padding: 10px;
+        }
+
+        #hidden {
+            overflow: hidden;
+        }
+
+        #scroll {
+            overflow: scroll;
+        }
+
+        #auto {
+            overflow: auto;
+        }
+
+        #xy {
+            white-space: nowrap;
+            overflow-y: scroll;
+            overflow-x: hidden;
+        }
+        
+    </style>
+</head>
+<body>
+
+    <h1>Propriedade <code>overflow</code></h1>
+
+    <p>
+        Controla Como o Conteúdo Deve Ser Exibido Caso Ultrapassar Os Limites Do Container.
+    </p>
+    
+    <i>Exemplo:</i> <br><br><br>
+
+    <CODE>overflow: visible;</CODE>
+
+    <div class="exemplo">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id possimus vel, vitae perferendis aliquid eum optio hic officiis numquam incidunt quidem ex facere illo delectus ea quia voluptate fuga amet.</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id possimus vel, vitae perferendis aliquid eum optio hic officiis numquam incidunt quidem ex facere illo delectus ea quia voluptate fuga amet.</p>
+    </div>
+    
+    <br><br><br><br><br><br>
+
+    <CODE>overflow: hidden;</CODE>
+
+    <div id="hidden" class="exemplo">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id possimus vel, vitae perferendis aliquid eum optio hic officiis numquam incidunt quidem ex facere illo delectus ea quia voluptate fuga amet.</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id possimus vel, vitae perferendis aliquid eum optio hic officiis numquam incidunt quidem ex facere illo delectus ea quia voluptate fuga amet.</p>
+    </div>
+
+    <br><br>
+
+    <CODE>overflow: scroll;</CODE>
+
+    <div id="scroll" class="exemplo">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id possimus vel, vitae perferendis aliquid eum optio hic officiis numquam incidunt quidem ex facere illo delectus ea quia voluptate fuga amet.</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id possimus vel, vitae perferendis aliquid eum optio hic officiis numquam incidunt quidem ex facere illo delectus ea quia voluptate fuga amet.</p>
+    </div>
+
+    <br><br>
+
+    <CODE>overflow: auto;</CODE>
+
+    <div id="auto" class="exemplo">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id possimus vel, vitae perferendis aliquid eum optio hic officiis numquam incidunt quidem ex facere illo delectus ea quia voluptate fuga amet.</p>
+        <!-- <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id possimus vel, vitae perferendis aliquid eum optio hic officiis numquam incidunt quidem ex facere illo delectus ea quia voluptate fuga amet.</p> -->
+    </div>
+
+    <br><br>
+
+    <CODE>overflow: x & y;</CODE>
+
+    <div id="xy" class="exemplo">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id possimus vel, vitae perferendis aliquid eum optio hic officiis numquam incidunt quidem ex facere illo delectus ea quia voluptate fuga amet.</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id possimus vel, vitae perferendis aliquid eum optio hic officiis numquam incidunt quidem ex facere illo delectus ea quia voluptate fuga amet.</p>
+    </div>
+    
+</body>
+</html>
